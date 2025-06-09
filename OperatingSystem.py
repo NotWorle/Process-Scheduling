@@ -29,12 +29,12 @@ class Process: #tiến trình
             self.state = state
 
 class ProgramCounter:
-    def __init__(self, initial_address):
-        self.address = [initial_address]
+    def __init__(self, initial_address:list):
+        self.address = initial_address
         self.index = 0
 
     def __str__(self):
-        return f'Program Counter: {self.index}: {self.address[index]}'
+        return f'Program Counter: {self.index}: {self.address[self.index]}'
 
     def get_address(self):
         return self.address[self.index]
@@ -42,11 +42,10 @@ class ProgramCounter:
     def get_index(self):
         return self.index
 
-    def jump(self, index=None):
-        if index is None:
-            self.index = self.index + 1
-        else:
-            self.index = index
+    def jump(self, index):
+        if index < 0 or len(self.address) <= index :
+            print("Program counter index out of range")
+        self.index = index
 
 
 
@@ -55,5 +54,7 @@ class ProcessControlBlock:
     def __init__(self, process:Process,):
         pass
 if __name__ == "__main__":
-    PC1 = ProgramCounter(["0x99","0x100"])
+    PC1 = ProgramCounter(["A=3","b=2",'print()','a = fun(c)'])
+    print(PC1.get_address())
+    PC1.jump(2)
     print(PC1.get_address())
