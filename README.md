@@ -1,2 +1,2 @@
 # Process-Scheduling
-Muốn mô phỏng lại các lý thuyết về lập trình CPU cho dễ hiểu và nhớ
+Mô phỏng lại các lý thuyết về lập trình CPU dưới dạng các giải thuật, các trúc dữ liệu trên ngôn ngữ python 3
