@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../Projects/Artificial_Intelligence/.idea/Artificial_Intelligence.iml" filepath="$PROJECT_DIR$/../../Projects/Artificial_Intelligence/.idea/Artificial_Intelligence.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ProcessScheduling.iml" filepath="$PROJECT_DIR$/.idea/ProcessScheduling.iml" />
     </modules>
   </component>
